@@ -58,10 +58,7 @@ that global keeps the window global, its `document` and the chrome DOM alive.
 - Retains: the window global. Narrowest of the three (delayed startup is quick), but the same pattern as #1/#2.
 - Trigger: open and close a window faster than Firefox's delayed startup (idle-dispatched).
 
-### 4. Known-fine pattern that depends on `unload` firing: everything below
-Not leaks as written, listed so nobody re-checks them. All were read at both registration and teardown.
-
-### 5. `ZenBoostsEditor` (separate window) keeps `openerWindow` *(low, bounded)*
+### 4. `ZenBoostsEditor` (separate window) keeps `openerWindow` *(low, bounded)*
 - `src/zen/boosts/ZenBoostsEditor.mjs:32-52` stores `openerWindow` (a browser.xhtml) and registers strong observers
   (`OBSERVERS`, plus `selector-picker-picked` at `:658`). Removal: `uninit()` at `:175-181` via `handleClose()`
   (`:1692`) from the editor's `unload` listener (`:84`).
@@ -72,6 +69,7 @@ Not leaks as written, listed so nobody re-checks them. All were read at both reg
   double-add; an unmatched `addObserver` on teardown would be removed once only. Inferred, small.
 
 ## Checked and fine (registration and teardown both read)
+Everything here depends on `unload` firing, which is why #1-#3 differ.
 
 | Where | Holder | Teardown |
 | --- | --- | --- |
