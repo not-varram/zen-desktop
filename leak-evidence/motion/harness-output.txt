@@ -1,0 +1,17 @@
+WAAPI: animate, fake finish fires                              -> resolved
+WAAPI: animate, then ctrl.stop()                               -> PENDING
+WAAPI: animate, then ctrl.cancel()                             -> PENDING
+WAAPI: external anim.cancel() (element removed/style reset)    -> PENDING
+WAAPI: element removed from DOM mid-animation (no finish)      -> PENDING
+   (2nd animate promise: resolved)
+2nd animate() same element+prop supersedes 1st (1st promise)   -> PENDING
+JS path (marginBottom, rAF-driven): completes                  -> resolved
+JS path: ctrl.stop() mid-way                                   -> PENDING
+JS path: ctrl.cancel() mid-way                                 -> PENDING
+JS path: 2nd animate() same prop supersedes 1st (1st promise)  -> PENDING
+animate(0,100,{duration:1}) value: stop()                      -> PENDING
+animate(0,100,{duration:1}) value: cancel()                    -> PENDING
+animate(0,100,{duration:1}) value: complete()                  -> resolved
+animate(el, opacity:[1,1]) already at target (no-op)           -> resolved
+JS path, rAF frozen 300ms                                      -> PENDING
+JS path, rAF restored (queued frames replayed)                 -> resolved
