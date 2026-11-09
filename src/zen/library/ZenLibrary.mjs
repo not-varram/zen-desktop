@@ -957,6 +957,10 @@ export class ZenLibrary extends MozLitElement {
   }
 
   #teardown() {
+    // Closing a window never disconnects this element, so the observer added
+    // in connectedCallback has to go here or the pref service keeps the whole
+    // closed window alive through it.
+    Services.prefs.removeObserver(HIDDEN_TABS_PREF, this.#tabsObserver);
     this.#cleanup();
     this.#cancelIdleCleanup();
     this.#contentMounted = false;

@@ -26,3 +26,5 @@ prefs = [
 ["browser_library_spaces_refresh.js"]
 
 ["browser_library_toggle_sidebar_width.js"]
+
+["browser_library_window_close_leak.js"]
