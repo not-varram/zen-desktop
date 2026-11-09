@@ -1,0 +1,45 @@
+mem/504a.bin processes: 14
+== Main Process (pid 48495): explicit 332.0MB  ghost-entries=2 detached-entries=106
+    51.9MB explicit/cert-storage/storage
+    20.0MB explicit/startup-cache/data
+    16.0MB explicit/workers/workers(chrome)/worker(resource:\\gre\modules\translation\cld-worker.js, 0x39acc8800)/zone(0x150074800)/realm(web-worker)/c
+    15.7MB explicit/window-objects/top(<anonymized-555>, id=553)/active/window(<anonymized-555>)/dom/element-nodes
+    14.1MB explicit/window-objects/top(none)/ghost/window(<anonymized-252>)/dom/element-nodes
+    7.4MB explicit/storage/sqlite/other
+    7.3MB explicit/window-objects/top(<anonymized-555>, id=553)/active/window(<anonymized-555>)/dom/text-nodes
+    7.2MB explicit/js-non-window/runtime/script-data
+    6.6MB explicit/window-objects/top(none)/ghost/window(<anonymized-252>)/dom/text-nodes
+    6.3MB explicit/js-non-window/zones/zone(0x11a66de00)/strings/malloc-heap/latin1
+== Isolated Web Content (pid 57885): explicit 79.0MB  ghost-entries=0 detached-entries=0
+    11.6MB explicit/js-non-window/runtime/script-data
+    9.3MB explicit/js-non-window/runtime/shared-immutable-strings-cache
+    5.1MB explicit/images/content/raster/used/progress=18f/image(1276x1037, <anonymized-4>)/unlocked/types=400/surface(1276x1037, svgContext:[ ])/deco
+    4.3MB explicit/window-objects/top(<anonymized-322122547201>, id=542)/active/window(<anonymized-322122547201>)/js-realm(<anonymized-1>)/classes/cla
+    3.5MB explicit/window-objects/top(<anonymized-322122547201>, id=542)/active/window(<anonymized-322122547201>)/js-realm(<anonymized-1>)/scripts/mal
+    3.3MB explicit/window-objects/top(<anonymized-322122547201>, id=542)/active/window(<anonymized-322122547201>)/js-realm(<anonymized-1>)/scripts/gc-
+    2.4MB explicit/layout/style-sheet-cache/document-shared
+    2.4MB explicit/window-objects/top(<anonymized-322122547201>, id=542)/js-zone(0x10146fa00)/unused-gc-things
+    2.4MB explicit/window-objects/top(<anonymized-322122547201>, id=542)/js-zone(0x10146fa00)/scopes/malloc-heap
+    1.9MB explicit/window-objects/top(<anonymized-322122547201>, id=542)/active/window(<anonymized-322122547201>)/js-realm(<anonymized-1>)/classes/cla
+== Isolated Web Content (pid 57888): explicit 52.9MB  ghost-entries=0 detached-entries=0
+    4.6MB explicit/js-non-window/runtime/script-data
+    3.6MB explicit/window-objects/top(<anonymized-326417514500>, id=550)/active/window(<anonymized-326417514500>)/layout/style-sheets
+    2.2MB explicit/js-non-window/gc-heap/unused-arenas
+    2.2MB explicit/images/content/raster/used/progress=18f/image(1076x526, <anonymized-12>)/unlocked/types=400/surface(1076x526, svgContext:[ ])/decod
+    2.2MB explicit/images/content/raster/used/progress=18f/image(1462x384, <anonymized-11>)/unlocked/types=400/surface(1462x384, svgContext:[ ])/decod
+    1.8MB explicit/window-objects/top(<anonymized-326417514500>, id=550)/active/window(<anonymized-326417514500>)/js-realm(<anonymized-2>)/classes/cla
+    1.7MB explicit/js-non-window/runtime/shared-immutable-strings-cache
+    1.6MB explicit/window-objects/top(<anonymized-326417514500>, id=550)/active/window(<anonymized-326417514500>)/dom/element-nodes
+    1.5MB explicit/images/content/raster/used/progress=18f/image(828x480, <anonymized-14>)/unlocked/types=400/surface(828x480, svgContext:[ ])/decoded
+    1.2MB explicit/window-objects/top(<anonymized-326417514500>, id=550)/active/window(<anonymized-326417514500>)/js-realm(<anonymized-2>)/scripts/mal
+== WebExtensions (pid 48502): explicit 48.8MB  ghost-entries=0 detached-entries=0
+    4.9MB explicit/window-objects/top(<anonymized-4294967302>, id=23)/active/window(<anonymized-4294967302>)/js-realm(<anonymized-5>)/classes/class(Ar
+    2.4MB explicit/window-objects/top(<anonymized-4294967302>, id=23)/active/window(<anonymized-4294967302>)/js-realm(<anonymized-5>)/classes/class(Ma
+    2.3MB explicit/js-non-window/gc-heap/unused-arenas
+    2.2MB explicit/window-objects/top(<anonymized-4294967302>, id=23)/active/window(<anonymized-4294967302>)/js-realm(<anonymized-5>)/classes/class(Ar
+    2.1MB explicit/js-non-window/zones/zone(0x10646d000)/unused-gc-things
+    1.8MB explicit/window-objects/top(<anonymized-4294967302>, id=23)/active/window(<anonymized-4294967302>)/js-realm(<anonymized-5>)/classes/class(Ar
+    1.7MB explicit/js-non-window/runtime/script-data
+    1.5MB explicit/js-non-window/zones/zone(0x10646d000)/strings/gc-heap/latin1
+    1.4MB explicit/js-non-window/zones/zone(0x10646de00)/realm([System Principal], shared JSM global)/classes/class(Function)/objects/gc-heap
+    1.0MB explicit/js-non-window/gc-heap/unused-chunks

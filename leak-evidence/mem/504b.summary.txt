@@ -1,0 +1,45 @@
+mem/504b.bin processes: 22
+== webIsolated=https://youtube.com (pid 2940): explicit 613.7MB  ghost-entries=0 detached-entries=36
+    181.0MB explicit/media/resources
+    40.0MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=4XSK6OQclOw&t=2070s, id=131)/active/window(https:\\www.youtube.com\watch?v=4XSK6
+    33.8MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=4XSK6OQclOw&t=2070s, id=131)/active/window(https:\\www.youtube.com\watch?v=4XSK6
+    25.8MB explicit/js-non-window/runtime/script-data
+    24.2MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=4XSK6OQclOw&t=2070s, id=131)/active/window(https:\\www.youtube.com\watch?v=4XSK6
+    16.0MB explicit/workers/workers(chrome)/worker(resource:\\gre\modules\translations\cld-worker.js, 0x7fa39b630800)/zone(0x7fa383ffd000)/realm(web-wo
+    14.8MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=4XSK6OQclOw&t=2070s, id=131)/active/window(https:\\www.youtube.com\watch?v=4XSK6
+    12.3MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=4XSK6OQclOw&t=2070s, id=131)/active/window(https:\\www.youtube.com\watch?v=4XSK6
+    12.2MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=4XSK6OQclOw&t=2070s, id=131)/active/window(https:\\www.youtube.com\watch?v=4XSK6
+    12.1MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=4XSK6OQclOw&t=2070s, id=131)/active/window(https:\\www.youtube.com\watch?v=4XSK6
+== Main Process (pid 1802): explicit 352.5MB  ghost-entries=0 detached-entries=0
+    50.5MB explicit/window-objects/top(about:memory, id=528)/active/window(about:memory)/dom/element-nodes
+    25.8MB explicit/window-objects/top(about:memory, id=528)/active/window(about:memory)/dom/text-nodes
+    13.2MB explicit/js-non-window/zones/zone(0x7ff820a88000)/strings/string(<non-notable strings>)/malloc-heap/latin1
+    11.8MB explicit/ac2d/heap-resources
+    11.6MB explicit/startup-cache/data
+    10.9MB explicit/window-objects/top(about:memory, id=528)/active/window(about:memory)/layout/pres-arena/nsInlineFrame
+    7.3MB explicit/storage/sqlite/other
+    6.9MB explicit/gfx/webrender/texture-cache/structures
+    6.2MB explicit/js-non-window/runtime/script-data
+    6.1MB explicit/storage/sqlite/places.sqlite/cache-used
+== extension (pid 2139): explicit 347.9MB  ghost-entries=0 detached-entries=0
+    25.5MB explicit/window-objects/top(moz-extension:\\32f6632b-3d1a-4620-a836-04d53532d4de\html\background.html, id=49)/active/window(moz-extension:\\
+    16.0MB explicit/workers/workers(chrome)/worker(resource:\\gre\modules\translations\cld-worker.js, 0x7fa39e399000)/zone(0x7fa39e2f1000)/realm(web-wo
+    15.0MB explicit/js-non-window/runtime/script-data
+    11.1MB explicit/window-objects/top(moz-extension:\\32f6632b-3d1a-4620-a836-04d53532d4de\html\background.html, id=49)/js-zone(0x7fa39167b000)/string
+    7.2MB explicit/window-objects/top(moz-extension:\\10389c18-1ad6-4af5-84ed-1d8c9f0e83b8\background.html, id=53)/active/window(moz-extension:\\10389
+    7.2MB explicit/js-non-window/zones/zone(0x7fa39e26e000)/strings/string(<non-notable strings>)/gc-heap/latin1
+    7.0MB explicit/js-non-window/runtime/gc/nursery-committed
+    6.3MB explicit/window-objects/top(moz-extension:\\32f6632b-3d1a-4620-a836-04d53532d4de\html\background.html, id=49)/js-zone(0x7fa39167b000)/string
+    6.1MB explicit/js-non-window/runtime/atoms-table
+    5.6MB explicit/window-objects/top(moz-extension:\\32f6632b-3d1a-4620-a836-04d53532d4de\html\background.html, id=49)/js-zone(0x7fa39167b000)/string
+== webIsolated=https://youtube.com (pid 14660): explicit 304.9MB  ghost-entries=0 detached-entries=14
+    25.0MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=AUCt4Yy_vRE&list=RDWePmBZppnq4&index=9, id=417)/active/window(https:\\www.youtub
+    18.9MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=AUCt4Yy_vRE&list=RDWePmBZppnq4&index=9, id=417)/active/window(https:\\www.youtub
+    16.9MB explicit/js-non-window/runtime/script-data
+    16.0MB explicit/workers/workers(chrome)/worker(resource:\\gre\modules\translations\cld-worker.js, 0x7fa390787800)/zone(0x7fa38edb8000)/realm(web-wo
+    13.8MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=AUCt4Yy_vRE&list=RDWePmBZppnq4&index=9, id=417)/active/window(https:\\www.youtub
+    10.2MB explicit/layout/style-sheet-cache/document-shared
+    9.3MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=AUCt4Yy_vRE&list=RDWePmBZppnq4&index=9, id=417)/active/window(https:\\www.youtub
+    7.3MB explicit/js-non-window/runtime/shared-immutable-strings-cache
+    7.0MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=AUCt4Yy_vRE&list=RDWePmBZppnq4&index=9, id=417)/active/window(https:\\www.youtub
+    6.9MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=AUCt4Yy_vRE&list=RDWePmBZppnq4&index=9, id=417)/js-zone(0x7fa394078000)/strings/

@@ -1,0 +1,45 @@
+mem/11721.bin processes: 64
+== Isolated Web Content (pid 3410): explicit 2317.4MB  ghost-entries=0 detached-entries=157
+    44.3MB explicit/js-non-window/runtime/script-data
+    26.5MB explicit/js-non-window/gc-heap/chunk-admin
+    22.7MB explicit/window-objects/top(<anonymized-27917287532>, id=27917287530)/active/window(<anonymized-27917287532>)/js-realm(<anonymized-41>)/clas
+    22.7MB explicit/window-objects/top(<anonymized-27917287505>, id=27917287503)/active/window(<anonymized-27917287505>)/js-realm(<anonymized-3>)/class
+    22.6MB explicit/window-objects/top(<anonymized-27917287692>, id=1290)/active/window(<anonymized-27917287692>)/js-realm(<anonymized-96>)/classes/cla
+    22.6MB explicit/window-objects/top(<anonymized-27917287740>, id=2412)/active/window(<anonymized-27917287740>)/js-realm(<anonymized-137>)/classes/cl
+    22.6MB explicit/window-objects/top(<anonymized-27917287743>, id=2414)/active/window(<anonymized-27917287743>)/js-realm(<anonymized-144>)/classes/cl
+    22.6MB explicit/window-objects/top(none)/detached/window(<anonymized-27917287707>)/js-realm(<anonymized-113>)/classes/class(BoundFunctionObject)/ob
+    22.6MB explicit/window-objects/top(<anonymized-27917287692>, id=1290)/active/window(<anonymized-27917287783>)/js-realm(<anonymized-114>)/classes/cl
+    22.6MB explicit/window-objects/top(<anonymized-27917287744>, id=2448)/cached/window(<anonymized-27917287744>)/js-realm(<anonymized-149>)/classes/cl
+== Isolated Web Content (pid 194566): explicit 2283.4MB  ghost-entries=0 detached-entries=233
+    65.9MB explicit/js-non-window/runtime/script-data
+    34.6MB explicit/window-objects/top(<anonymized-188978561206>, id=969)/js-zone(0x7f1a1808a000)/scopes/malloc-heap
+    25.6MB explicit/js-non-window/gc-heap/chunk-admin
+    23.3MB explicit/js-non-window/runtime/shared-immutable-strings-cache
+    23.0MB explicit/window-objects/top(<anonymized-188978561206>, id=969)/js-zone(0x7f1a1808a000)/scopes/gc-heap
+    22.6MB explicit/window-objects/top(<anonymized-188978561206>, id=969)/active/window(<anonymized-188978561206>)/js-realm(<anonymized-67>)/classes/cl
+    22.6MB explicit/window-objects/top(<anonymized-188978561206>, id=969)/active/window(<anonymized-188978561211>)/js-realm(<anonymized-82>)/classes/cl
+    22.6MB explicit/window-objects/top(<anonymized-188978561025>, id=907)/active/window(<anonymized-188978561025>)/js-realm(<anonymized-1>)/classes/cla
+    22.6MB explicit/window-objects/top(<anonymized-188978561206>, id=969)/active/window(<anonymized-188978561249>)/js-realm(<anonymized-136>)/classes/c
+    22.6MB explicit/window-objects/top(<anonymized-188978561025>, id=907)/active/window(<anonymized-188978561037>)/js-realm(<anonymized-21>)/classes/cl
+== WebExtensions (pid 3054): explicit 1727.1MB  ghost-entries=0 detached-entries=547
+    52.6MB explicit/js-non-window/runtime/script-data
+    41.9MB explicit/window-objects/top(<anonymized-10737418256>, id=71)/active/window(<anonymized-10737418256>)/js-realm(<anonymized-12>)/classes/class
+    27.4MB explicit/window-objects/top(<anonymized-10737418256>, id=71)/active/window(<anonymized-10737418256>)/js-realm(<anonymized-12>)/classes/class
+    26.7MB explicit/window-objects/top(<anonymized-10737418256>, id=71)/js-zone(0x7f1a4f4a5000)/strings/gc-heap/latin1
+    26.5MB explicit/window-objects/top(<anonymized-10737418256>, id=71)/active/window(<anonymized-10737418256>)/js-realm(<anonymized-12>)/classes/class
+    22.6MB explicit/window-objects/top(<anonymized-10737418256>, id=71)/active/window(<anonymized-10737418849>)/js-realm(<anonymized-34>)/classes/class
+    22.6MB explicit/window-objects/top(<anonymized-10737418256>, id=71)/active/window(<anonymized-10737418857>)/js-realm(<anonymized-39>)/classes/class
+    22.6MB explicit/window-objects/top(<anonymized-10737418256>, id=71)/active/window(<anonymized-10737418848>)/js-realm(<anonymized-29>)/classes/class
+    22.2MB explicit/window-objects/top(<anonymized-10737418256>, id=71)/js-zone(0x7f1a4f4a5000)/scopes/malloc-heap
+    22.0MB explicit/window-objects/top(<anonymized-10737418256>, id=71)/js-zone(0x7f1a4f4a5000)/strings/malloc-heap/two-byte
+== Isolated Web Content (pid 25767): explicit 1433.0MB  ghost-entries=3 detached-entries=20
+    201.4MB explicit/window-objects/top(none)/ghost/window(<anonymized-68719476746>)/js-realm(<anonymized-18>)/classes/class(Function)/objects/gc-heap
+    168.4MB explicit/window-objects/top(none)/ghost/window(<anonymized-68719476746>)/js-realm(<anonymized-18>)/classes/class(Call)/objects/gc-heap
+    156.4MB explicit/window-objects/top(none)/ghost/window(<anonymized-68719476746>)/js-realm(<anonymized-18>)/classes/class(Object)/objects/gc-heap
+    125.7MB explicit/window-objects/top(none)/ghost/window(<anonymized-68719476746>)/dom/orphan-nodes
+    69.7MB explicit/media/resources
+    62.5MB explicit/window-objects/top(none)/ghost/window(<anonymized-68719476746>)/js-realm(<anonymized-18>)/classes/class(Object)/objects/gc-buffers/
+    49.4MB explicit/window-objects/top(none)/ghost/window(<anonymized-68719476746>)/js-realm(<anonymized-18>)/classes/class(Array)/objects/gc-heap
+    25.9MB explicit/window-objects/top(none)/ghost/window(<anonymized-68719476746>)/js-realm(<anonymized-18>)/classes/class(BoundFunctionObject)/object
+    25.5MB explicit/window-objects/top(none)/ghost/window(<anonymized-68719476746>)/js-realm(<anonymized-18>)/classes/class(HTMLElement)/objects/gc-buf
+    23.3MB explicit/js-non-window/runtime/script-data
