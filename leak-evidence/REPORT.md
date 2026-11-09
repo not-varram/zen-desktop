@@ -34,7 +34,7 @@ reply), `meta/memreports.md` (78 about:memory files parsed by `meta/analyze_memr
 |---|---|---|---|---|
 | 1 | Library built at startup and never torn down: browser.xhtml orphan nodes, 1.23.1b (#15823) | 2 posted (the only multi-GB Zen-attributable Main leaks) + #15823 | high (path, version window, downgrade fix, maintainer linked it) | **already fixed upstream**: 3d7777adc (gh-15826), in 1.23.2b and in base. No change made |
 | 2 | Library download stack never removed its `DownloadList` view on window close, so every closed window stayed alive, 1.23b..1.23.1b | detached windows in 1.23b reports (5981075145: 2 detached) | high by reading: `addView` -> `DownloadList._views` is a strong `Set` (Firefox `DownloadList.sys.mjs`), the stack holds `#window`, and CustomizableUI `onDestroyed` does not run on window close | **already fixed upstream**: same 3d7777adc added an `unload` -> `destroy()`. No change made |
-| 3 | **Cause A**: `<zen-library>` hidden-tabs pref observer is strong and removed only in `disconnectedCallback`, so every closed window stays alive, 1.24b+ | **0 posted** (it shipped after the last report, 1.23.4b); same symptom as pattern 2 for anyone on 1.24b/1.24.1b | high by reading (`causes/A-library-pref-observer.md`); runtime **not** verified | **fixed here**: 28be25f20 (+ test d55c862ca) |
+| 3 | **Cause A**: `<zen-library>` hidden-tabs pref observer is strong and removed only in `disconnectedCallback`, so every closed window stays alive, 1.24b+ | **0 posted** (it shipped after the last report, 1.23.4b); same symptom as pattern 2 for anyone on 1.24b/1.24.1b | high by reading (`causes/A-library-pref-observer.md`); runtime **not** verified | **fixed here**: 8cdddb81e (fix + test) |
 | 4 | Late registrations: ZenMods / ZenCompactMode / ZenStartup add strong observers after awaits; a window closed before they run keeps them forever | could add 1 detached window per window closed during startup/restore; cannot explain 14 | low-medium (code verified; Gecko still runs promise callbacks for a closed chrome window, verified in source; timing inferred) | not fixed (not confirmed) |
 | 5 | Tab close waits on a motion promise with no timeout (`_removeTab` -> `animateItemClose().then(_endRemoveTab)`); motion 13.2.0 never settles a stopped/cancelled/superseded animation | none identified; no in-tree trigger found | ~20% (settle semantics harness-verified; trigger not found) | not fixed (latent) |
 | - | Detached browser.xhtml windows in 1.12..1.22 and in 1.23.2b..1.23.4b | 24 of the 26 detached-window reports | **unexplained** | open |
@@ -44,18 +44,28 @@ Earlier Zen leaks fixed upstream and mentioned in the thread or in git: folder-i
 
 ## 3. Commits on this branch (source changes)
 
-- `28be25f20` Remove the library's hidden-tabs pref observer on window unload (cause A).
-- `d55c862ca` Add a test that a closed window is not kept alive by the library (never run, see below).
+- `8cdddb81e` Remove the library's hidden-tabs pref observer on window unload (cause A), with the regression test
+  `src/zen/tests/library/browser_library_window_close_leak.js` (never run, see below).
 - All other commits only add files under `leak-evidence/`.
 
-## 4. Verified vs inferred
+## 4. Review
+
+Independent adversarial review by a separate Opus agent that did not write the fix: `review-A.md`. The
+review sub-session was refused by the Aether scheduler for host memory (2.69 GB free against a 3.16 GB reserve),
+so it ran as a Claude Code subagent instead. Verdict: fix approved; test approved with changes. Applied: wait
+for the element to upgrade before closing (F2, otherwise the test could pass without the fix); drop the pref poke
+that changed the main window's pref (F4); commit message wording about when the element registers (F1). Open: F3,
+the test fails if any other leak still keeps a closed window alive, so it must be run with and without the fix
+before it lands.
+
+## 5. Verified vs inferred
 
 See `verification.md`. Short version: no build, no run, no about:memory in this container (no engine checkout,
 Zen's GTK/X11 runtime libraries are missing, installing system packages is forbidden here). Everything about cause A
 is verified **by reading both sides** (Zen code + Firefox C++), not at runtime. Prettier and `node --check` pass;
 ESLint and mochitests cannot run.
 
-## 5. Not covered by the fixes
+## 6. Not covered by the fixes
 
 - All content-process, GPU, extension, DevTools and upstream-Firefox reports (71/77 Main-normal reports).
 - Detached browser.xhtml windows before 1.23b and in 1.23.2b..1.23.4b (24 reports): no confirmed Zen cause.

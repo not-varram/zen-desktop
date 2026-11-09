@@ -6,7 +6,8 @@ this container (see `../verification.md`).
 
 ## Retention chain
 1. `src/browser/base/content/browser-box-inc-xhtml.patch:10` puts `<html:zen-library hidden="true">`
-   into every `browser.xhtml`, so every browser window creates one `ZenLibrary` element at load.
+   into every `browser.xhtml`, so every browser window has one; it upgrades to `ZenLibrary` once `ZenLibrary.mjs` is loaded into that window
+   (lazy getters in `zen-sets.js`, `ZenSpaceManager.mjs`, `ZenCompactMode.mjs`; probably at startup, *inferred*, review F1).
 2. `src/zen/library/ZenLibrary.mjs` `connectedCallback()` (line ~202 on base bd97c6bb0):
    `Services.prefs.addObserver(HIDDEN_TABS_PREF, this.#tabsObserver)`.
    `#tabsObserver = { observe: () => this.requestUpdate() }`: the arrow function closes over
@@ -33,7 +34,7 @@ The posted reports in #8932 stop at 1.23.4b (`../meta/memreports.md`), so **this
 none of the posted reports**; it is a live regression on current dev with the same
 symptom as pattern 2 there (detached browser.xhtml).
 
-## Fix (commit 28be25f20)
+## Fix (commit 8cdddb81e)
 Remove the observer in `#teardown()` (run on window `unload`). `nsPrefBranch::RemoveObserverImpl`
 returns `NS_OK` when no matching callback exists (same file), so the existing removal in
 `disconnectedCallback` stays harmless. XPConnect reuses one wrapped-JS per JS object, so passing

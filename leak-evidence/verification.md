@@ -14,7 +14,7 @@
 - What a runtime check would be: with Zen 1.24.1b stock vs. the same build with `ZenLibrary.mjs` patched inside
   `browser/omni.ja`, open and close 5 windows, press "GC"+"CC" in about:memory, then "Measure": stock should show
   5 `top(none)/detached/window(chrome://browser/content/browser.xhtml)` entries, patched 0. The mochitest added in
-  d55c862ca encodes the same check (weak reference to a closed window must clear after GC/CC).
+  8cdddb81e encodes the same check (weak reference to a closed window must clear after GC/CC).
 
 ## Verified by reading code (both sides of every claim)
 - Cause A chain: `browser-box-inc-xhtml.patch:10` (element in every window) -> `ZenLibrary.mjs` connectedCallback
