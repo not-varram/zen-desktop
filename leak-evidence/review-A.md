@@ -1,4 +1,4 @@
-# Review A: 8cdddb81e (fix) and 8cdddb81e (test), independent adversarial review (2026-11-09)
+# Review A: 28be25f20 (fix) and d55c862ca (test), since squashed into 8cdddb81e with the fixes below; independent adversarial review (2026-11-09)
 
 Hard rule (verbatim from the user): Hard rule, because it has crashed every session on this account twice tonight: never run `apt-get install`, `dpkg -i` or `systemd-tmpfiles`, and never change the ownership or mode of /root or anything under it. A systemd postinst re-owns the account's shared /root and kills all sessions; run-v27ssb3txh is fixing that in Aether. Put this rule word for word in every sub-session's and subagent's brief. If you truly need system packages, stop and tell Varsh which ones and why.
 
