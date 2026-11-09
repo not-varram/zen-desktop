@@ -1,0 +1,45 @@
+mem/9649.bin processes: 23
+== WebExtensions (pid 1230): explicit 300.3MB  ghost-entries=0 detached-entries=20
+    89.1MB explicit/window-objects/top(<anonymized-25769803786>, id=55)/active/window(<anonymized-25769803786>)/js-realm(<anonymized-8>)/classes/class(
+    17.6MB explicit/js-non-window/runtime/script-data
+    16.0MB explicit/window-objects/top(<anonymized-25769803786>, id=55)/active/window(<anonymized-25769803786>)/js-realm(<anonymized-8>)/classes/class(
+    8.8MB explicit/window-objects/top(<anonymized-25769803786>, id=55)/active/window(<anonymized-25769803786>)/js-realm(<anonymized-8>)/classes/class(
+    8.0MB explicit/js-non-window/gc-heap/unused-arenas
+    7.2MB explicit/window-objects/top(<anonymized-25769803786>, id=55)/active/window(<anonymized-25769803786>)/js-realm(<anonymized-8>)/classes/class(
+    6.8MB explicit/js-non-window/zones/zone(0x10438d000)/strings/gc-heap/latin1
+    6.1MB explicit/js-non-window/runtime/atoms-table
+    6.1MB explicit/window-objects/top(<anonymized-25769803786>, id=55)/active/window(<anonymized-25769803786>)/js-realm(<anonymized-8>)/classes/class(
+    5.2MB explicit/window-objects/top(<anonymized-25769803791>, id=49)/active/window(<anonymized-25769803791>)/js-realm(<anonymized-11>)/classes/class
+== Isolated Web Content (pid 1280): explicit 248.0MB  ghost-entries=0 detached-entries=29
+    42.9MB explicit/media/resources
+    12.7MB explicit/window-objects/top(<anonymized-38654705665>, id=84)/active/window(<anonymized-38654705665>)/js-realm(<anonymized-2>)/classes/class(
+    12.3MB explicit/window-objects/top(<anonymized-38654705665>, id=84)/active/window(<anonymized-38654705665>)/js-realm(<anonymized-2>)/classes/class(
+    12.1MB explicit/js-non-window/runtime/script-data
+    10.7MB explicit/layout/style-sheet-cache/document-shared
+    9.6MB explicit/window-objects/top(<anonymized-38654705665>, id=84)/js-zone(0x108b93200)/unused-gc-things
+    8.3MB explicit/window-objects/top(<anonymized-38654705665>, id=84)/js-zone(0x108b93200)/property-maps/malloc-heap/tables
+    7.4MB explicit/window-objects/top(<anonymized-38654705665>, id=84)/active/window(<anonymized-38654705665>)/js-realm(<anonymized-2>)/classes/class(
+    6.5MB explicit/window-objects/top(<anonymized-38654705665>, id=84)/active/window(<anonymized-38654705665>)/js-realm(<anonymized-2>)/classes/class(
+    6.0MB explicit/js-non-window/runtime/gc/nursery-committed
+== Main Process (pid 1177): explicit 180.3MB  ghost-entries=0 detached-entries=0
+    12.8MB explicit/script-preloader/non-heap/memmapped-cache
+    11.4MB explicit/storage/sqlite/other
+    10.6MB explicit/startup-cache/data
+    9.1MB explicit/storage/prefix-set/goog-phish-proto
+    6.5MB explicit/js-non-window/zones/zone(0x12e58de00)/unused-gc-things
+    6.3MB explicit/storage/sqlite/places.sqlite/cache-used
+    5.0MB explicit/js-non-window/runtime/script-data
+    5.0MB explicit/js-non-window/gc-heap/unused-chunks
+    3.9MB explicit/startup-cache/mapping
+    3.8MB explicit/window-objects/top(chrome:\\browser\content\browser.xhtml, id=3)/active/window(chrome:\\browser\content\browser.xhtml)/dom/element-
+== Isolated Web Content (pid 1235): explicit 134.1MB  ghost-entries=0 detached-entries=0
+    15.4MB explicit/js-non-window/runtime/script-data
+    7.7MB explicit/window-objects/top(<anonymized-34359738369>, id=65)/js-zone(0x10ac90800)/unused-gc-things
+    7.3MB explicit/window-objects/top(<anonymized-34359738369>, id=65)/active/window(<anonymized-34359738369>)/layout/style-sheets
+    5.1MB explicit/js-non-window/runtime/shared-immutable-strings-cache
+    5.0MB explicit/window-objects/top(<anonymized-34359738369>, id=65)/active/window(<anonymized-34359738369>)/js-realm(<anonymized-1>)/classes/class(
+    4.8MB explicit/js-non-window/gc-heap/unused-arenas
+    4.5MB explicit/window-objects/top(<anonymized-34359738369>, id=65)/js-zone(0x10ac90800)/strings/malloc-heap/latin1
+    4.0MB explicit/window-objects/top(<anonymized-34359738369>, id=65)/active/window(<anonymized-34359738369>)/js-realm(<anonymized-1>)/classes/class(
+    3.7MB explicit/window-objects/top(<anonymized-34359738369>, id=65)/active/window(<anonymized-34359738369>)/js-realm(<anonymized-1>)/scripts/malloc
+    2.9MB explicit/js-non-window/zones/zone(0x10ac90800)/realm(<anonymized-4>)/classes/class(Object)/objects/gc-heap

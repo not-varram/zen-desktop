@@ -1,0 +1,45 @@
+mem/504c.bin processes: 19
+== Main Process (pid 22219): explicit 591.7MB  ghost-entries=0 detached-entries=0
+    149.1MB explicit/gfx/webrender/swgl
+    42.8MB explicit/window-objects/top(about:memory, id=109)/active/window(about:memory)/dom/element-nodes
+    21.6MB explicit/window-objects/top(about:memory, id=109)/active/window(about:memory)/dom/text-nodes
+    13.0MB explicit/script-preloader/non-heap/memmapped-cache
+    10.8MB explicit/js-non-window/zones/zone(0x7fd082a88000)/strings/string(<non-notable strings>)/malloc-heap/latin1
+    10.4MB explicit/startup-cache/data
+    10.1MB explicit/window-objects/top(about:memory, id=109)/active/window(about:memory)/layout/pres-arena/nsInlineFrame
+    6.0MB explicit/js-non-window/runtime/script-data
+    5.1MB explicit/storage/sqlite/other
+    4.5MB explicit/js-non-window/zones/zone(0x7fd082a88000)/realm([System Principal], shared JSM global)/classes/class(Function)/objects/gc-heap
+== webIsolated=https://youtube.com (pid 22794): explicit 551.4MB  ghost-entries=0 detached-entries=57
+    29.0MB explicit/js-non-window/runtime/script-data
+    18.4MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=4XSK6OQclOw&t=2070s, id=92)/active/window(https:\\www.youtube.com\watch?v=4XSK6O
+    16.0MB explicit/workers/workers(chrome)/worker(resource:\\gre\modules\translations\cld-worker.js, 0x7f7f74018000)/zone(0x7f7f6a5fe000)/realm(web-wo
+    15.3MB explicit/layout/style-sheet-cache/document-shared
+    13.9MB explicit/media/resources
+    13.3MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=4XSK6OQclOw&t=2070s, id=92)/active/window(https:\\www.youtube.com\watch?v=4XSK6O
+    9.8MB explicit/js-non-window/runtime/shared-immutable-strings-cache
+    9.3MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=4XSK6OQclOw&t=2070s, id=92)/js-zone(0x7f7f75fef000)/property-maps/malloc-heap/ta
+    8.8MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=4XSK6OQclOw&t=2070s, id=92)/active/window(https:\\www.youtube.com\watch?v=4XSK6O
+    7.4MB explicit/window-objects/top(https:\\www.youtube.com\watch?v=4XSK6OQclOw&t=2070s, id=92)/js-zone(0x7f7f75fef000)/unused-gc-things
+== webIsolated=https://chatgpt.com (pid 23317): explicit 333.1MB  ghost-entries=0 detached-entries=10
+    56.2MB explicit/window-objects/top(https:\\chatgpt.com\c\6923bdb2-02c4-8331-a6c5-16849651d9a8, id=104)/active/window(https:\\chatgpt.com\c\6923bdb2
+    29.7MB explicit/js-non-window/runtime/script-data
+    19.2MB explicit/window-objects/top(https:\\chatgpt.com\c\6923bdb2-02c4-8331-a6c5-16849651d9a8, id=104)/active/window(https:\\chatgpt.com\c\6923bdb2
+    19.1MB explicit/window-objects/top(https:\\chatgpt.com\c\6923bdb2-02c4-8331-a6c5-16849651d9a8, id=104)/js-zone(0x7f7f79020000)/unused-gc-things
+    18.5MB explicit/window-objects/top(https:\\chatgpt.com\c\6923bdb2-02c4-8331-a6c5-16849651d9a8, id=104)/active/window(https:\\chatgpt.com\c\6923bdb2
+    16.0MB explicit/workers/workers(chrome)/worker(resource:\\gre\modules\translations\cld-worker.js, 0x7f7f744d1800)/zone(0x7f7f717e2000)/realm(web-wo
+    11.5MB explicit/window-objects/top(https:\\chatgpt.com\c\6923bdb2-02c4-8331-a6c5-16849651d9a8, id=104)/active/window(https:\\chatgpt.com\c\6923bdb2
+    7.9MB explicit/js-non-window/runtime/shared-immutable-strings-cache
+    7.3MB explicit/window-objects/top(https:\\chatgpt.com\c\6923bdb2-02c4-8331-a6c5-16849651d9a8, id=104)/active/window(https:\\chatgpt.com\c\6923bdb2
+    6.4MB explicit/window-objects/top(https:\\chatgpt.com\c\6923bdb2-02c4-8331-a6c5-16849651d9a8, id=104)/js-zone(0x7f7f79020000)/property-maps/malloc
+== extension (pid 22543): explicit 262.6MB  ghost-entries=0 detached-entries=25
+    23.8MB explicit/window-objects/top(moz-extension:\\32f6632b-3d1a-4620-a836-04d53532d4de\html\background.html, id=51)/active/window(moz-extension:\\
+    14.2MB explicit/js-non-window/runtime/script-data
+    8.0MB explicit/js-non-window/runtime/gc/nursery-committed
+    7.2MB explicit/window-objects/top(moz-extension:\\10389c18-1ad6-4af5-84ed-1d8c9f0e83b8\background.html, id=55)/active/window(moz-extension:\\10389
+    6.7MB explicit/js-non-window/zones/zone(0x7f7f8226e000)/strings/string(<non-notable strings>)/gc-heap/latin1
+    6.1MB explicit/js-non-window/runtime/atoms-table
+    5.6MB explicit/window-objects/top(moz-extension:\\32f6632b-3d1a-4620-a836-04d53532d4de\html\background.html, id=51)/js-zone(0x7f7f777e5000)/string
+    5.3MB explicit/window-objects/top(moz-extension:\\7b38902f-e03e-40f3-8200-2ba48861f957\background.html, id=47)/active/window(moz-extension:\\7b389
+    4.8MB explicit/window-objects/top(moz-extension:\\32f6632b-3d1a-4620-a836-04d53532d4de\html\background.html, id=51)/active/window(moz-extension:\\
+    4.7MB explicit/window-objects/top(moz-extension:\\32f6632b-3d1a-4620-a836-04d53532d4de\html\background.html, id=51)/js-zone(0x7f7f777e5000)/string
